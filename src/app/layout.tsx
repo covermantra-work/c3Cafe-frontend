@@ -16,14 +16,18 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://chaichowkcafe.com"),
   title: "Chai Chowk Cafe | C3 Chai, Coffee & Conversations",
   description:
-    "Welcome to Chai Chowk Cafe (C3). Enjoy royal kulhad chai, hand-pulled espresso coffee, fresh grilled snacks, pizzas, and desserts in a warm cozy ambiance.",
+    "Fatehabad ka Favourite Chai Spot 🔥 Best Taste • Best Vibe ✨ Enjoy authentic kulhad chai, handcrafted coffees, fresh pizzas & snacks at MM PG College.",
   keywords: [
     "Chai Chowk Cafe",
-    "C3 Cafe",
+    "C3 Cafe Fatehabad",
     "Kulhad Chai",
-    "Coffee Shop",
+    "Coffee Shop Fatehabad",
+    "MM PG College Cafe",
     "Cafe Franchise India",
   ],
+  alternates: {
+    canonical: "https://chaichowkcafe.com",
+  },
   icons: {
     icon: "/logo.jpg",
     apple: "/logo.jpg",
@@ -31,10 +35,30 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chai Chowk Cafe | C3 Chai, Coffee & Conversations",
     description:
-      "Handcrafted brews and delicious cafe bites in a cozy ambiance. Visit us today!",
+      "Fatehabad ka Favourite Chai Spot 🔥 Best Taste • Best Vibe ✨ Visit Once, Come Again ❤️",
+    url: "https://chaichowkcafe.com",
+    siteName: "Chai Chowk Cafe",
     type: "website",
     locale: "en_IN",
+    images: [
+      {
+        url: "/logo.jpg",
+        width: 800,
+        height: 800,
+        alt: "Chai Chowk Cafe Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chai Chowk Cafe | C3 Chai, Coffee & Conversations",
+    description:
+      "Fatehabad ka Favourite Chai Spot 🔥 Best Taste • Best Vibe ✨ Visit Once, Come Again ❤️",
     images: ["/logo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -96,7 +120,9 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
         />
       </head>
       <body

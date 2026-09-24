@@ -22,14 +22,15 @@ export const MenuSection: React.FC = () => {
   const phoneNumber = "919253779999";
 
   const filteredItems = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
     return MENU_ITEMS.filter((item) => {
       const matchesCategory =
         selectedCategory === "all" || item.category === selectedCategory;
       const matchesSearch =
-        searchQuery === "" ||
-        item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (item.hindiName && item.hindiName.includes(searchQuery)) ||
-        item.description.toLowerCase().includes(searchQuery.toLowerCase());
+        query === "" ||
+        item.name.toLowerCase().includes(query) ||
+        (item.hindiName && item.hindiName.includes(query)) ||
+        item.description.toLowerCase().includes(query);
 
       return matchesCategory && matchesSearch;
     });
@@ -63,6 +64,7 @@ export const MenuSection: React.FC = () => {
               placeholder="Search Chai, Pizza, Cold Coffee, Fries..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              maxLength={60}
               className="w-full bg-white border border-[#ebdcd0] rounded-full py-3 pl-11 pr-4 text-sm text-[#1c1917] placeholder-[#998b84] focus:outline-none focus:border-[#e05326] focus:ring-1 focus:ring-[#e05326] shadow-sm"
             />
             <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#998b84] text-sm">
@@ -226,7 +228,9 @@ export const MenuSection: React.FC = () => {
               </h3>
             </div>
             <a
-              href="https://wa.me/919253779999?text=Hi%20Chai%20Chowk%20Cafe,%20I%20want%20to%20place%20a%20customized%20order."
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                "Hi Chai Chowk Cafe, I want to place a customized order."
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#133e3b] hover:bg-[#0d2d2a] text-white text-xs font-bold transition-all shadow"
