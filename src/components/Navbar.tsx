@@ -27,7 +27,7 @@ export const Navbar: React.FC = () => {
                 <span className="w-2 h-2 rounded-full bg-[#e05326] animate-pulse"></span>
               </span>
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#e05326]">
-                MM PG College, Fatehabad
+                Taste of Tradition.
               </span>
             </div>
           </Link>
