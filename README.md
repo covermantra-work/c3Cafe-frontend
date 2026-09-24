@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chai Chowk Cafe (C3) - Frontend Web Application
 
-## Getting Started
+> **Chai, Coffee & Conversations** | Handcrafted pure vegetarian cafe experience at MM PG College, Fatehabad, Haryana.
 
-First, run the development server:
+---
 
+## ☕ Project Overview
+
+Chai Chowk Cafe is a modern, ultra-lean, zero-maintenance web application built for maximum speed (<1s load time), seamless mobile responsiveness, and high conversion.
+
+* **100% Pure Vegetarian Menu:** 75+ curated items across 10 categories (Chai, Espresso, Mocktails, Pizzas, Burgers, Garlic Breads, Maggi, Snacks, Desserts).
+* **Zero Form Friction:** Direct 1-tap Phone Calling (`092537 79999`) and deep-linked WhatsApp ordering (`https://wa.me/919253779999`) with pre-filled items.
+* **Brand Aesthetics (70% Light / 30% Dark):**
+  * Primary Accent: Terracotta Rust (`#e05326`)
+  * Contrast Anchors: Deep Slate Teal (`#0d2d2a` / `#133e3b`)
+  * Canvas: Warm Linen Cream (`#faf8f5` / `#f4efe8`)
+* **Local SEO:** Schema.org `CafeOrCoffeeShop` structured data, Google Maps integration, and Fatehabad store timings.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Framework:** [Next.js](https://nextjs.org/) (App Router, Turbopack)
+* **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+* **Language:** TypeScript
+* **Icons & Assets:** Optimized local SVG icons & verified photography
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+* Node.js 18+ installed
+
+### Installation & Local Development
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 1. Install dependencies
+npm install
+
+# 2. Run local dev server
+npm run dev -p 35050
 ```
+Open [http://localhost:35050](http://localhost:35050) in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔒 Git Branching & Contribution Guidelines (For Developers)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To protect the production codebase, direct pushes to `main` are restricted to Repository Owners / Admins.
 
-## Learn More
+### 📌 Rules for Developers:
+1. **Never commit directly to `main`**.
+2. **Always create a feature branch** from `main`:
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout -b feature/your-feature-name
+   # or
+   git checkout -b dev/your-name
+   ```
+3. **Commit your changes**:
+   ```bash
+   git add .
+   git commit -m "feat: description of changes"
+   ```
+4. **Push your branch to GitHub**:
+   ```bash
+   git push -u origin feature/your-feature-name
+   ```
+5. **Create a Pull Request (PR)** on GitHub targeting the `main` branch.
+6. The repository administrator will review and merge the PR into `main`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+Private & Proprietary - Chai Chowk Cafe © 2026. All rights reserved.
