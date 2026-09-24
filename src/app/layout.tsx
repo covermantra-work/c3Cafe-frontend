@@ -54,9 +54,13 @@ export default function RootLayout({
     name: "Chai Chowk Cafe",
     alternateName: "C3 Cafe",
     image: "/logo.jpg",
-    description: "Artisanal tea, specialty espresso, fresh snacks and cozy dine-in experience.",
+    description: "Fatehabad ka Favourite Chai Spot 🔥 Best Taste • Best Vibe ✨ Kulhad chai, coffee, and fresh bites at MM PG College.",
     telephone: "+919253779999",
     priceRange: "₹₹",
+    sameAs: [
+      "https://www.instagram.com/c3chaichowkcafe/",
+      "https://www.facebook.com/profile.php?id=61579396418460",
+    ],
     servesCuisine: ["Cafe", "Beverages", "Fast Food", "Italian"],
     address: {
       "@type": "PostalAddress",

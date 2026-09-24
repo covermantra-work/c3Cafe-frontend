@@ -72,36 +72,53 @@ export const Franchise: React.FC = () => {
               </div>
             </div>
 
-            {/* Right Card: Formats */}
+            {/* Right Card: Partner Support & Consultation */}
             <div className="lg:col-span-5 bg-[#09211f]/95 border border-[#1a4a46] rounded-3xl p-6 sm:p-8 shadow-xl">
-              <h3 className="text-lg font-bold text-white mb-2">Available Models</h3>
-              <p className="text-xs text-stone-300 mb-6">Select a format that matches your commercial space.</p>
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#ff8159] block mb-1">
+                Franchise Partner Program
+              </span>
+              <h3 className="text-xl font-bold text-white mb-2">Why Partner With Us?</h3>
+              <p className="text-xs text-stone-300 mb-6">
+                Get comprehensive operational support from day one with our proven cafe model.
+              </p>
 
-              <div className="space-y-4 text-xs sm:text-sm">
-                <div className="p-4 rounded-2xl bg-[#133e3b]/70 border border-[#1a4a46] hover:border-[#e05326]/50 transition-colors">
-                  <div className="flex justify-between items-center mb-1">
-                    <span className="font-bold text-white">Chai Chowk Kiosk</span>
-                    <span className="text-[#ff8159] font-bold">₹8L - ₹12L</span>
+              <div className="space-y-3.5 text-xs sm:text-sm">
+                <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-[#133e3b]/60 border border-[#1a4a46]">
+                  <span className="text-lg shrink-0">🤝</span>
+                  <div>
+                    <h5 className="font-bold text-white">Full Onboarding & Training</h5>
+                    <p className="text-stone-300 text-xs mt-0.5">Staff hiring guidance, kitchen SOPs and complete chef recipes.</p>
                   </div>
-                  <p className="text-stone-300 text-xs">Area: 100 - 250 sq.ft | High footfall malls, metros, tech hubs.</p>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-[#133e3b]/70 border border-[#1a4a46] hover:border-[#e05326]/50 transition-colors">
-                  <div className="flex justify-between items-center mb-1">
-                    <span className="font-bold text-white">Dine-In Cafe Model</span>
-                    <span className="text-[#ff8159] font-bold">₹15L - ₹25L</span>
+                <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-[#133e3b]/60 border border-[#1a4a46]">
+                  <span className="text-lg shrink-0">📦</span>
+                  <div>
+                    <h5 className="font-bold text-white">Raw Material Supply Chain</h5>
+                    <p className="text-stone-300 text-xs mt-0.5">Direct supply of authentic tea leaves, spices, dips and packaging.</p>
                   </div>
-                  <p className="text-stone-300 text-xs">Area: 500 - 1200 sq.ft | Full menu, seating for 30+, aesthetic vibe.</p>
+                </div>
+
+                <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-[#133e3b]/60 border border-[#1a4a46]">
+                  <span className="text-lg shrink-0">📢</span>
+                  <div>
+                    <h5 className="font-bold text-white">Marketing & Brand Growth</h5>
+                    <p className="text-stone-300 text-xs mt-0.5">Local launch campaigns, digital promotions and creative assets.</p>
+                  </div>
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-[#1a4a46] text-center">
-                <p className="text-xs text-stone-300">
-                  Direct Inquiries:{" "}
-                  <a href="tel:+919253779999" className="text-[#ff8159] hover:underline font-bold">
-                    +91 92537 79999
-                  </a>
-                </p>
+              <div className="mt-6 pt-5 border-t border-[#1a4a46] flex items-center justify-between gap-3 text-xs">
+                <div>
+                  <p className="text-stone-400">Speak with Team:</p>
+                  <p className="text-white font-bold text-sm">+91 92537 79999</p>
+                </div>
+                <a
+                  href="tel:+919253779999"
+                  className="px-5 py-2.5 rounded-full bg-[#e05326] hover:bg-[#c84318] text-white font-bold transition-all shadow-md shrink-0 hover:scale-105"
+                >
+                  Call Now
+                </a>
               </div>
             </div>
           </div>

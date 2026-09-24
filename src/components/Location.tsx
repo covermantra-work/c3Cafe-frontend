@@ -95,6 +95,33 @@ export const Location: React.FC = () => {
                 📞 Call Cafe
               </a>
             </div>
+
+            {/* Social Connect Card */}
+            <div className="p-4 sm:p-5 rounded-2xl bg-white border border-[#ebdcd0] shadow-sm flex items-center justify-between gap-3">
+              <div>
+                <p className="text-xs font-black text-[#1c1917]">Fatehabad ka Favourite Chai Spot 🔥</p>
+                <p className="text-[11px] text-[#695c56] font-medium mt-0.5">Follow for daily reels & cafe vibes</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://www.instagram.com/c3chaichowkcafe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3.5 py-1.5 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 text-white text-xs font-bold shadow-sm hover:scale-105 transition-transform inline-flex items-center gap-1.5"
+                >
+                  <span>📷</span>
+                  <span>Instagram</span>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61579396418460"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3.5 py-1.5 rounded-full bg-[#1877f2] text-white text-xs font-bold shadow-sm hover:scale-105 transition-transform inline-flex items-center gap-1.5"
+                >
+                  <span>Facebook</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Right Map & Storefront Photo */}
